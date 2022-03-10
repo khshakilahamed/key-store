@@ -16,7 +16,7 @@ const Footer = () => {
 
                         <div className='sm:w-1/2 text-white'>
                             <h2 className='text-xl font-bold'>Address</h2>
-                            <p>Shop# 838,839,840, Level# 8, Computer City Center, <br /> New Elephant Road, Dhaka</p>
+                            <p>Level# 8, Computer City Center, <br /> New Elephant Road, Dhaka</p>
                         </div>
 
                     </div>
