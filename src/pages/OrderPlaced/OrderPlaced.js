@@ -21,17 +21,33 @@ const OrderPlaced = () => {
             <Navbar></Navbar>
             <div className='mx-10 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-28 mt-20'>
                 <div className='py-10'>
-                    <div className='md:flex'>
-                        <div className='md:w-1/2 flex'>
-                            <div>
-                                <img src={img} alt="" />
+                    <div className='md:flex gap-4'>
+                        <div className='md:w-1/2 sm:flex gap-4'>
+                            <div className='sm:w-1/2 border'>
+                                <img className='' src={img} alt="" />
                             </div>
-                            <div>
-                                <img src={img} alt="" />
+                            <div className='sm:w-1/2 space-y-4'>
+                                <h2 className='font-thin text-xl'>{name}</h2>
+                                <p className='text-4xl'>&#2547; {price}</p>
+                                <NavLink to={`/keyboardDetails/${_id}`}>
+                                    <button className=' text-cyan-500 underline rounded-md text-white py-2 px-3 text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>View details</button>
+                                </NavLink>
                             </div>
                         </div>
                         <div className='md:w-1/2'>
+                            <h2 className='bg-cyan-500 text-center py-2 px-3 text-xl'>Write here delivery details</h2>
+                            <div className='flex flex-col'>
+                                <input className='py-2 border border-gray-200 my-2  px-3 rounded outline-none' type="text" placeholder='name'/>
 
+                                <input className='py-2 border border-gray-200 my-2  px-3 rounded outline-none' type="email" name="" id="" placeholder='email'/>
+
+                                <input className='py-2 border border-gray-200 my-2  px-3 rounded outline-none' type="number" name="" id="" placeholder='number'/>
+
+                                <textarea className='py-2 border border-gray-200 my-2  px-3 rounded outline-none' name="" id="" cols="30" rows="5" placeholder='address'></textarea>
+                                <div>
+                                    <button className='bg-cyan-500 px-3 py-2 rounded text-xl'>Submit</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
