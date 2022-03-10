@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaGooglePlus, FaMapMarkerAlt, FaDoorOpen, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaGooglePlus} from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className='md:w-1/2 py-10 md:py-0 sm:flex justify-between gap-5'>
 
                         <div className='sm:w-1/2 flex items-center py-10 sm:py-0'>
-                            <h1 className='py-2 px-4 text-white font-bold bg-cyan-500 rounded-3xl mr-3'>K</h1>
+                            <h1 className='py-2 px-4 text-white font-bold bg-cyan-500 rounded-3xl mr-1'>K</h1>
                             <h1 className='text-3xl font-bold text-cyan-500'>KeyStore</h1>
                         </div>
 

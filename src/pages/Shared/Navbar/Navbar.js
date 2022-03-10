@@ -7,8 +7,12 @@ const Navbar = () => {
             <div className='mx-10 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-28'>
                 <div className='flex justify-between items-center text-white py-5'>
                     <div className='flex justify-center items-center'>
-                        <h1 className='py-2 px-4 font-bold bg-cyan-500 rounded-3xl mr-3'>K</h1>
-                        <h1 className='text-3xl font-bold text-cyan-500'>KeyStore</h1>
+                        <NavLink to='/'>
+                            <h1 className='py-2 px-4 font-bold bg-cyan-500 rounded-3xl mr-1'>K</h1>
+                        </NavLink>
+                        <NavLink to='/'>
+                            <h1 className='text-3xl font-bold text-cyan-500'>KeyStore</h1>
+                        </NavLink>
                     </div>
                     <div className='flex justify-center items-center gap-4'>
                         <li  className='list-none text-lg hover:text-cyan-500'>

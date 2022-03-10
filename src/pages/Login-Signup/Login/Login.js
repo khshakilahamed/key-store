@@ -13,13 +13,13 @@ const Login = () => {
                     <div className='flex justify-center items-center'>
                         <div className='flex flex-col w-11/12 md:w-2/4'>
                             <label className='text-xl font-thin'  htmlFor="userEmail">Email</label>
-                            <input className='px-3 py-1 font-thin rounded-md outline-none border border-gray-500' type="email" name="" id="userEmail" placeholder='your email'/>
+                            <input className='px-3 py-1 font-thin rounded outline-none border border-gray-500' type="email" name="" id="userEmail" placeholder='your email'/>
                             <br />
                             <label className='text-xl font-thin'  htmlFor="userPassword">Password</label>
-                            <input className='px-3 py-1 font-thin rounded-md outline-none border border-gray-500' type="password" name="" id="userPassword" placeholder='your password'/>
+                            <input className='px-3 py-1 font-thin rounded outline-none border border-gray-500' type="password" name="" id="userPassword" placeholder='your password'/>
                             <div className='text-center my-5'>
                                 <p className='text-sm cursor-pointer'>Forgot password?</p>
-                                <button className='py-2 px-4 rounded-md text-xl font-bold bg-cyan-500 hover:bg-cyan-600 my-3'>Sign In</button>
+                                <button className='py-2 px-4 rounded text-xl font-bold bg-cyan-500 hover:bg-cyan-600 my-3'>Sign In</button>
                                 <NavLink to="/signup">
                                     <p className='text-sm cursor-pointer'>Create Account</p>
                                 </NavLink>
