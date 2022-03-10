@@ -19,7 +19,9 @@ const Navbar = () => {
                         </li>
                         <li  className='list-none text-lg hover:text-cyan-500'><a href="#">Dashboard</a></li>
                         <li  className='list-none text-lg hover:text-cyan-500'><a href="#">About</a></li>
-                        <li  className='list-none text-lg hover:text-cyan-700 border text-cyan-500 border-cyan-500 px-3 py-1'><a href="#">Login</a></li>
+                        <li  className='list-none text-lg hover:text-cyan-700 border text-cyan-500 border-cyan-500 px-3 py-1'>
+                            <NavLink to="/login">Login</NavLink>
+                        </li>
                     </div>
                 </div>
             </div>
