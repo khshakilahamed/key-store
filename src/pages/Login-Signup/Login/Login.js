@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import useFirebase from '../../../hooks/useFirebase';
 import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
 
 const Login = () => {
-    const {signInUsingGoogle} = useFirebase();
+    const {signInUsingGoogle} = useAuth();
 
     return (
         <div>

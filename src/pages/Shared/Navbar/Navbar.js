@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 
 const Navbar = () => {
-    const {user, LogOut} = useFirebase();
+    const {user, LogOut} = useAuth();
     return (
         <div style={{backgroundColor:"#202B37"}} className="fixed top-0 right-0 left-0 z-10">
             <div className='mx-10 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-28'>

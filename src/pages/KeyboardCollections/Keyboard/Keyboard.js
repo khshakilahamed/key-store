@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Keyboard = ({keyboard}) => {
     const {_id, name, price, img} = keyboard || {};
     return (
-        <div className='m-1 p-2  drop-shadow-md rounded-md hover:bg-gray-300  '>
+        <div className='m-1 p-2 border drop-shadow-md rounded-md hover:bg-gray-300  '>
             <div className='rounded-md'>
                 <img className='rounded-md' src={img} alt="" />
             </div>

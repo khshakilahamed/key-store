@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
 
 const SignUp = () => {
-    const {createUserAccount} = useFirebase();
+    const {createUserAccount} = useAuth();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');

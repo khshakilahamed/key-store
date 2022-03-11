@@ -7,10 +7,11 @@ import Login from './pages/Login-Signup/Login/Login';
 import SignUp from './pages/Login-Signup/SignUp/SignUp';
 import OrderPlaced from './pages/OrderPlaced/OrderPlaced';
 import KeyboardDetails from './pages/KeyboardDetails/KeyboardDetails';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
       <Router>
         <Switch>
           <Route exact path='/'>
@@ -39,7 +40,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </AuthProvider>
   );
 }
 
