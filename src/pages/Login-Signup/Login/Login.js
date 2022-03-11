@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import useAuth from '../../../hooks/useAuth';
 import useFirebase from '../../../hooks/useFirebase';
 import Footer from '../../Shared/Footer/Footer';
@@ -7,6 +8,13 @@ import Navbar from '../../Shared/Navbar/Navbar';
 
 const Login = () => {
     const {signInUsingGoogle} = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+
+    const handleGoogleSignIn = () => {
+        signInUsingGoogle(location, history);
+    }
 
     return (
         <div>
@@ -31,7 +39,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className='text-center'>
-                        <button onClick={signInUsingGoogle} className='bg-red-400 inline-block py-1 px-2'>Sign in with google</button>
+                        <button onClick={handleGoogleSignIn} className='bg-red-400 inline-block py-1 px-2'>Sign in with google</button>
                     </div>
                 </div>
             </div>

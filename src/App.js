@@ -8,6 +8,7 @@ import SignUp from './pages/Login-Signup/SignUp/SignUp';
 import OrderPlaced from './pages/OrderPlaced/OrderPlaced';
 import KeyboardDetails from './pages/KeyboardDetails/KeyboardDetails';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -23,9 +24,9 @@ function App() {
           <Route path='/explore_keyboards'>
             <KeyboardCollections></KeyboardCollections>
           </Route>
-          <Route path='/orderPlaced/:id'>
+          <PrivateRoute path='/orderPlaced/:id'>
             <OrderPlaced></OrderPlaced>
-          </Route>
+          </PrivateRoute>
           <Route path='/keyboardDetails/:id'>
             <KeyboardDetails></KeyboardDetails>
           </Route>

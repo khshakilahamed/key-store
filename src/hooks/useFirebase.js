@@ -49,10 +49,12 @@ const useFirebase = () => {
     // }
 
 
-    const signInUsingGoogle = () => {
+    const signInUsingGoogle = (location, history) => {
         signInWithPopup(auth, googleProvider)
         .then(result => {
             setUser(result.user);
+            const destination = location?.state?.from || '/';
+            history.replace(destination);
         })
         .catch(error => {
             setError(error.message);
