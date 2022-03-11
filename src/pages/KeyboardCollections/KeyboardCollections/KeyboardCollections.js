@@ -9,7 +9,7 @@ const KeyboardCollections = () => {
     // /fakeData.json
 
     useEffect(() => {
-        fetch('http://localhost:5000/keyboards')
+        fetch('https://fathomless-bastion-17049.herokuapp.com/keyboards')
         .then(res => res.json())
         .then(data => setKeyboards(data))
     }, []);
@@ -24,7 +24,7 @@ const KeyboardCollections = () => {
                         <input className='border px-3 py-2 w-1/3' type="text" placeholder='Search Here'/>
                         <button className='px-3 py-2 bg-cyan-500'>Search</button>
                     </div>
-                    <div className='grid md:grid-cols-2 xl:grid-cols-3 md:gap-2 xl:gap-4 '>
+                    <div className='grid md:grid-cols-3 xl:grid-cols-4 md:gap-2 xl:gap-4 '>
                         {
                             keyboards.map(keyboard => <Keyboard keyboard={keyboard} key={keyboard._id}></Keyboard>)
                         }

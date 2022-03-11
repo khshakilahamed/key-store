@@ -9,7 +9,7 @@ const KeyboardDetails = () => {
     const {id} = useParams();
 
     useEffect(()=> {
-        fetch(`http://localhost:5000/keyboards/${id}`)
+        fetch(`https://fathomless-bastion-17049.herokuapp.com/keyboards/${id}`)
         .then(res => res.json())
         .then(data => setSingleKeyboard(data))
     }, []);

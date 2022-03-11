@@ -8,7 +8,7 @@ const KeyboardsList = () => {
     // /fakeData.json
 
     useEffect(() => {
-        fetch('http://localhost:5000/keyboards')
+        fetch('https://fathomless-bastion-17049.herokuapp.com/keyboards')
         .then(res => res.json())
         .then(data => setKeyboards(data))
     }, []);
@@ -22,9 +22,9 @@ const KeyboardsList = () => {
                     <p>get your favorite one</p>
                 </div>
 
-                <div className='grid md:grid-cols-2 xl:grid-cols-3 md:gap-2 xl:gap-4 mt-20'>
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:gap-2 xl:gap-4 mt-20'>
                     {
-                        keyboards.slice(0, 6).map(keyboard => <Keyboard keyboard={keyboard} key={keyboard._id}></Keyboard>)
+                        keyboards.slice(0, 8).map(keyboard => <Keyboard keyboard={keyboard} key={keyboard._id}></Keyboard>)
                     }
                 </div>
             </div>
